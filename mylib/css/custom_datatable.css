@@ -1,0 +1,56 @@
+/* Datatable Style */
+
+.status-icon {
+  font-size: 20px;
+}
+
+.dataTables_scrollBody thead,
+.DTFC_LeftBodyLiner .sorting_desc {
+  visibility: hidden;
+}
+
+#data tr td,
+.DTFC_Cloned tr td {
+  vertical-align: middle;
+}
+
+.filter .input-group:first-child,
+.filter .input-group label {
+  display: block;
+}
+
+.filter .input-group input,
+.filter .input-group select {
+  width: auto;
+}
+
+.filter .input-group:not(:first-child) {
+  display: none;
+}
+
+.dataTables_length {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+#data_wrapper > div.dt-buttons.btn-group.flex-wrap {
+  margin-bottom: 5px;
+}
+
+@media only screen and (min-width: 768px) {
+  /* For mobile desktop: */
+  /* #data tr th,
+  #data tr td {
+    white-space: normal;
+  } */
+}
+
+@media screen and (max-width: 767px) {
+  /* For mobile mobile: */
+  div.dataTables_wrapper div.dataTables_paginate ul.pagination {
+    justify-content: center;
+    flex-wrap: wrap;
+}
+}
+
+/* Datatable Style */

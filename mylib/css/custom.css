@@ -1,0 +1,95 @@
+.newline {
+	height: 2px;
+	width: 100%;
+	margin: 0 auto;
+	background-color: darkgray;
+}
+
+.formpengajuandana table tr th,
+.formpengajuandana table tr td {
+	padding: 0.5rem;
+}
+
+.datediv {
+    width: 130px;
+}
+
+.pad {
+    padding: 0 9px;
+    height: 30px;
+}
+
+.btnfont {
+    font-size: 11px;
+}
+
+.fc-daygrid-event:hover {
+    cursor: pointer;
+}
+
+.popover {
+    max-width: none;
+}
+
+.fc-h-event {
+    text-align: center;
+}
+
+.fc-daygrid-block-event .fc-event-title {
+    white-space: normal;
+}
+
+.my-calendar li span {
+	border-radius: 50% !important;
+	margin: 0 1px;
+	height: 45px;
+	width: 45px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.my-calendar .page-link {
+	border: none;
+}
+
+.todayDate {
+	background-color: deepskyblue;
+	color: white;
+}
+
+.toast { 
+	opacity: 1 !important; 
+}
+
+.icon-bottom-navbar {
+	width: 45px;
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+	background: none;
+}
+
+.dropdown-item:active {
+	color: #212529;
+}
+
+.page-top-button {
+	width: 35%;
+}
+
+@media screen and (max-width: 767px) {
+	/* For mobile desktop: */
+	.formpengajuandana {
+		background-color: #f4f6f9;
+		width: fit-content;
+	}
+
+	.page-top-button {
+		width: 75%;
+	}
+
+	.page-header-title {
+		font-size: 1.5rem !important;
+	}
+  }
