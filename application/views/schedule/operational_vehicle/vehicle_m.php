@@ -92,9 +92,7 @@
                         <input type="hidden" class="id_event"
                             value="<?php echo $today_event1['id_operational_vehicle']; ?>">
                         <div class="card-comment event-content">
-                            <img class="img-circle img-sm"
-                                src="<?php echo urlJimushoMinori(); ?>jimusho/hrd/data_entry/karyawan/foto/<?php echo $today_event1['foto']; ?>"
-                                alt="User Image">
+                            <img class="img-circle img-sm" src="<?php echo getAvatar(); ?>" alt="User Image">
                             <div class="comment-text">
                                 <span class="username">
                                     <?php echo $today_event1['nama_karyawan']; ?>
@@ -132,9 +130,7 @@
                         <input type="hidden" class="id_event"
                             value="<?php echo $this_month['id_operational_vehicle']; ?>">
                         <div class="card-comment event-content">
-                            <img class="img-circle img-sm"
-                                src="<?php echo urlJimushoMinori(); ?>jimusho/hrd/data_entry/karyawan/foto/<?php echo $this_month['foto']; ?>"
-                                alt="User Image">
+                            <img class="img-circle img-sm" src="<?php echo getAvatar(); ?>" alt="User Image">
                             <div class="comment-text">
                                 <span class="username">
                                     <?php echo $this_month['nama_karyawan']; ?>
@@ -238,8 +234,7 @@ $(document).ready(function() {
                             ] + "'>";
                         row += "<div class='card-comment event-content'>";
                         row +=
-                            "<img class='img-circle img-sm' src='<?php echo urlJimushoMinori(); ?>jimusho/hrd/data_entry/karyawan/foto/" +
-                            data[i]['foto'] + "'alt='User Image'>";
+                            "<img class='img-circle img-sm' src='<?php echo getAvatar(); ?>' alt='User Image'>";
                         row += "<div class='comment-text'>";
                         row += "<span class='username'> " + data[i]['nama_karyawan'] +
                             "</span>";
@@ -250,7 +245,7 @@ $(document).ready(function() {
                         row += "</div>";
                         if (i + 1 === data.length) {
                             row +=
-                                "<button type='button' class='btn btn-block btn-secondary mt-2 btn-add-event'>Tambah Jadwal</button>";
+                                "<button type='button' class='btn btn-block btn-secondary mt-2 btn-add-event'>Tambah `J`adwal</button>";
                         }
                         row += "</div>";
                     }
